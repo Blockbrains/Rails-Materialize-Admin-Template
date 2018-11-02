@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsMaterializeAdminTemplate</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <body>
+    <%= render partial: 'layouts/sidenav' %>
+    <div class="content">
+        <div class="container">
+            <% flash.each do |key, value| %>
+                <div class="card-panel flash">
+                  <div class="flash-icon <%= flash_class(key) %>">
+                      <i class="material-icons small"></i>
+                  </div>
+                  <div class="flash-message">
+                    <%= value %>
+                  </div>
+                </div>
+            <% end %>
+
+           <%= yield %>
+           
+        </div>
+    </div>
+  </body>
+  </body>
+</html>

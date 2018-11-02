@@ -1,0 +1,24 @@
+<nav>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <% if content_for? :breadcrumb %>
+        <div class="breadcrumb-wrapper hide-on-small-only">
+            <div class="center-align">
+                <%= yield :breadcrumb %>
+            </div>
+        </div>
+    <% end %>
+</nav>
+
+<ul id="slide-out" class="sidenav">
+  <li>
+    <div class="user-view">
+      <div class="background">
+        <%= image_tag 'nav-background.gif' %>
+      </div>
+      <a href="#user"><%= image_tag 'profile.png', width: '60' %></a>
+      <a href="#name"><span class="white-text name"> John Example</span></a>
+      <a href="#email"><span class="white-text email">john@example.com</span></a>
+      <%= link_to icon('exit_to_app', 'vertical-mid-align') + ' Sign out',  '#', class: 'white-text left' %><br>
+    </div>
+  </li>
+</ul>

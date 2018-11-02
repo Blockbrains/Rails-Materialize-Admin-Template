@@ -1,0 +1,20 @@
+nav{
+  background-color: $primary-color !important;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+
+  a{
+    display: block !important;
+
+    i{
+      color: white;
+    }
+  }
+
+  .breadcrumb-wrappe{
+    .breadcrumb{
+      color: white !important;
+    }
+  }
+}
