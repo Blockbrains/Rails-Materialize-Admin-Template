@@ -13,12 +13,30 @@
   <li>
     <div class="user-view">
       <div class="background">
-        <%= image_tag 'nav-background.gif' %>
+        <%= image_tag 'nav-background.jpeg' %>
       </div>
       <a href="#user"><%= image_tag 'profile.png', width: '60' %></a>
       <a href="#name"><span class="white-text name"> John Example</span></a>
       <a href="#email"><span class="white-text email">john@example.com</span></a>
       <%= link_to icon('exit_to_app', 'vertical-mid-align') + ' Sign out',  '#', class: 'white-text left' %><br>
     </div>
+  </li>
+
+  <li class="no-padding active"><%= link_to root_path do %><i class="material-icons">supervisor_account</i>Menu 1<% end %></li>
+  <li class="<%= 'active' if controller_name == 'c name comes here' %>"><%= link_to root_path do %><i class="material-icons">business</i>Menu 2</a><% end %></li>
+
+  <li class="no-padding">
+    <ul class="collapsible collapsible-accordion">
+      <li class="<%= 'active' if controller.class.parent.name == 'Manufacturing' %>">
+        <a class="collapsible-header">Menu 3<i class="material-icons">arrow_drop_down</i></a>
+        <div class="collapsible-body">
+          <ul>
+            <li class="active"><%= link_to root_path do %><i class="material-icons">build</i>Sub Menu 1<% end %></li>
+            <li class="<%= 'active' if controller_name == 'c name comes here' %>"><%= link_to root_path do %><i class="material-icons">settings_applications</i>Sub Menu 2<% end %></li>
+          </ul>
+
+        </div>
+      </li>
+    </ul>
   </li>
 </ul>
