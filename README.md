@@ -1,24 +1,7 @@
-# README
+# Rails Materialize Admin Template By Blockbrains
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails Project already binds Materialize Css and all its default components. Further Elements, helper function, and css classes has been added and will be soon documented in this section.
 
-Things you may want to cover:
+![alt text](https://image.ibb.co/nOGXV0/Screen-Shot-2018-11-02-at-16-03-57.png)
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
