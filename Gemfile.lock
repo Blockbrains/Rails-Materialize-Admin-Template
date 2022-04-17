@@ -200,19 +200,19 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
-  capybara (>= 3.10.0)
+  capybara (>= 3.35.3)
   chartkick
   chromedriver-helper
   coffee-rails (~> 4.2, >= 4.2.2)
-  jbuilder (~> 2.7, >= 2.7.0)
+  jbuilder (~> 2.11, >= 2.11.5)
   jquery-rails (>= 4.4.0)
   listen (>= 3.0.5, < 3.2)
   puma (~> 4.3)
-  rails (~> 5.2.6, >= 5.2.6.3)
-  sass-rails (~> 5.0, >= 5.0.7)
+  rails (~> 5.2.7)
+  sass-rails (~> 5.1, >= 5.1.0)
   selenium-webdriver
   spring
-  spring-watcher-listen (~> 2.0.1)
+  spring-watcher-listen (~> 2.0.0)
   sqlite3
   turbolinks (~> 5)
   tzinfo-data
