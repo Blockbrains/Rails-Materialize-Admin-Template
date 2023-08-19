@@ -140,12 +140,12 @@ GEM
       digest
       net-protocol
       timeout
-    nio4r (2.5.8)
+    nio4r (2.5.9)
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     public_suffix (4.0.7)
-    puma (4.3.12)
+    puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.7)
@@ -246,7 +246,7 @@ DEPENDENCIES
   jbuilder (~> 2.11, >= 2.11.5)
   jquery-rails (>= 4.6.0)
   listen (>= 3.0.5, < 3.2)
-  puma (~> 4.3)
+  puma (~> 5.6)
   rails (~> 6.1.7, >= 6.1.7.4)
   sass-rails (~> 6.0, >= 6.0.0)
   selenium-webdriver
